@@ -1,8 +1,10 @@
-# Introduction
+# RDS02U (UART) type UAV Single target Obstacle Avoidance Radar Application Manual
+
+## Introduction
 
 RDS02U is a lightweight millimeter-wave radar sensor. This product actively transmits a 77GHz electromagnetic wave to the front direction and processes the echo signal to determine whether there is an obstacle in front and feedback the obstacle range, speed, azimuth and other information from the radar guide radar carriers such as drones to avoid obstacles autonomously to ensure their safe operation.
 
-# Highlights:
+## Highlights:
 
 1. The transmitter and receiver antennas use 2 transmitter and 4 receiver MIMO arrays, the azimuth field range is 34 degrees, and the Angle resolution and Angle measurement accuracy are high.
 2.  The operating frequency is 77GHz\~81GHz, which has the advantages of moving target sensitivity and high range measurement accuracy.
@@ -10,7 +12,7 @@ RDS02U is a lightweight millimeter-wave radar sensor. This product actively tran
 4.  Supports output over the UART protocol, with a default baud rate of 115200.
 5.  The signal processing and control unit uses a monolithic DSP +ARM dual-core architecture to run algorithms such as radar data processing, target detection and target tracking on an internal high-speed digital signal processor.
 
-# Performance Parameters
+## Performance Parameters
 
 Table 1 Performance Parameters
 
@@ -32,13 +34,13 @@ Table 1 Performance Parameters
 |                           | Interface                  | UART                              |
 |                           | Dimension(mm)              | 50\*50\*7.8                       |
 
-# Product Physical Drawing
+## Product Physical Drawing
 
 ![](media/9817769bdfe078c4ed509e4608464c9b.jpeg)
 
 Figure 1 RDS02U Physical Image
 
-# Installation Method
+## Installation Method
 
 RDS02U radar installation steps:
 
@@ -46,7 +48,7 @@ RDS02U radar installation steps:
 -   Installation direction: The radar transceiver antenna is located at the arrow on the back of the radar. During installation, the arrow on the back of the radar is up and the radar is facing the UAV.
 -   Installation Angle: When the radar is installed, the antenna surface (the front of the radar) points directly in front of the UAV. According to the maximum downward inclination Angle of the UAV's flying attitude, the radar is installed by tilting upward. The optimal installation Angle is the same as the aircraft flying.
 
-# Quick Use Steps
+## Quick Use Steps
 
 ### Pin Definition
 
@@ -161,13 +163,13 @@ uint8_t crc8_table[256] = {
 };
 ```
 
-# Precautions For Product Use
+## Precautions For Product Use
 
 - During the transportation, storage, working and taking of the radar, it is necessary to fully protect the static electricity. For example, when there is no target object within the radar detection coverage, the radar continuously outputs irregular targets or when the DC voltage values such as power supply voltage and source current When it is in the normal range, the output signal cannot be obtained, and the radar may be damaged.
 - Please keep the radar cover clean when installing. To clean the cover, need to wipe it with a soft damp cloth, and then dry it naturally;
 - Please pay attention to the shape of the radar during installation, ensure that the installed radar is not deformed, and do not squeeze, bump, or hit; when installing, ensure that the radar is a factory part,and do not self-disassemble and self-install.
 
-# Frequently Asked Questions (FAQ)
+## Frequently Asked Questions (FAQ)
 
 1.  What is the radar detection range?Why is the minimum detection distance 1.5m?
     Obstacle avoidance detection range of UAV is 1.5-27m. Considering the length of the wing, it needs to stop when the UAV is 1.5m away from the obstacle, so the minimum detection distance is 1.5m.
