@@ -72,7 +72,6 @@ The serial port has a baud rate of 115200, supports only 3.3V level, data refres
 RDS02U message definitions are shown in the table below:
 
 Table 3 RDS02U Radar Frame Message Definition
-
 | Define       | Code  | Bytes |
 |--------------|-------|-------|
 | Frame Head   | 5555H | 2     |
@@ -90,9 +89,7 @@ Frame is the basic unit for transmitting data, as shown in Table 2. The sequence
 
 - During the transportation, storage, working and taking of the radar, it is necessary to fully protect the static electricity. For example, when there is no target object within the radar detection coverage, the radar continuously outputs irregular targets or when the DC voltage values such as power supply voltage and source current When it is in the normal range, the output signal cannot be obtained, and the radar may be damaged.
 - Please keep the radar cover clean when installing. To clean the cover, need to wipe it with a soft damp cloth, and then dry it naturally;
-- Please pay attention to the shape of the radar during installation, ensure that the installed radar is not deformed, and do not squeeze, bump, or hit; when installing, ensure that the radar is a factory part,
-
-and do not self-disassemble and self-install.
+- Please pay attention to the shape of the radar during installation, ensure that the installed radar is not deformed, and do not squeeze, bump, or hit; when installing, ensure that the radar is a factory part,and do not self-disassemble and self-install.
 
 # Frequently Asked Questions (FAQ)
 
